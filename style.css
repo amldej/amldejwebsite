@@ -87,7 +87,7 @@ a {
     transition: all .25s ease;
     animation: slideLeft 1s ease forwards;
     opacity: .8;
-    width: 40vh;
+    width: 45vh;
 }
 
 .info-logo {
@@ -102,7 +102,7 @@ a {
 
 @media only screen and (max-width: 700px) {
     .info-text {
-        font-size: .8em;
+        font-size: .9em;
     }
 }
 
@@ -359,9 +359,9 @@ a {
 video {
     display: block;
     margin: auto;
-    padding-bottom: 10px;}
-/*    min-width: 300px;
-}*/
+    padding-bottom: 10px;
+    min-width: 300px;
+}
 
 .vid {
     display: block;
