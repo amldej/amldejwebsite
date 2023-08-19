@@ -214,10 +214,20 @@ a {
     transition: all .25s ease;
 }
 
+
 .box-text p {
     font-size: .8em;
     font-style: italic;
     margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .box-text div {
+    font-size: .7em;
+}
+    .box-text p {
+    font-size: .7em;
+}
 }
 
 .box-text:hover {
