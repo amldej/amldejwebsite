@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>projects</title>
+	 <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"> </script>
+  <link rel="icon" href="./img/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 	<link rel="stylesheet" type="text/css" href="./style.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300" rel="stylesheet">
+
+<!-- 
+    <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+ -->
+
+</head>
+
+<body>
+
+  <nav class="nav-bar">
+    <ul class="nav-list">
+      <div class="nav-left">
+      <a href="index.html">amldej</a>
+      </div>
+      <div class="nav-right">
+      <a class="clicked">work</a>
+      <a href="contact.html">contact</a>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="projects-beige">
+
+  <div style="margin-top:0px;" class="overview-text">
+    <img class="portfolio" src="./img/myportfolio-cursive.png">
+    <p>Figma | HTML | CSS | JavaScript | React | Final Cut Pro</p>
+  </div>
+
+
+   <div class="box-wrapper">
+    <div class="box"><img style="width: 110%; padding-left: 5px; rotate:2deg" src="./img/digidesignicon.png">
+      <a href="#one">
+        <div class="box-text box-one">
+          <div style="padding-bottom: 0px">Digital Design</div>
+          <p>Learn more</p>
+        </div>
+      </a>
+    </div>
+    <div class="box"><img style="width: 85%;  padding-top: 5px" src="./img/codingicon.png">
+      <a href="#two">
+        <div class="box-text box-two">
+          <div style="padding-bottom: 0px">Web Development</div>
+          <p>Learn more</p>
+        </div>
+      </a>
+    </div>
+    <div class="box"><img style="width: 90%" src="./img/videoicon.png">
+      <a href="#three">
+        <div class="box-text box-three">
+          <div style="padding-bottom: 0px">Video Editing</div>
+          <p>Learn more</p>
+        </div>
+      </a>
+    </div>
+	</div>
+  </div>
+
+<div class="divider" id="one"></div>  
+
+<div class=projects-beige>
+ 	<div class="overview-text">
+   	<img style="width: 40%;min-width: 250px; rotate: 1deg; padding-top:20px" src="./img/digitaldesign.png">
+  </div>
+
+   <section class="project-preview">
+    <h1>I. Paper to Screen Web Design With Figma</h1>
+
+ <div class="slideshow-container">
+
+    <div class="mySlides">
+    	<img src="./img/slideshow1.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+		    <img src="./img/slideshow2.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+		    <img src="./img/slideshow3.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+		    <img src="./img/slideshow4.png" style="width:100%">
+		  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+	<ul style="text-align:center; padding-bottom:30px; padding-top:15px">Process of designing my portfolio website prior to self coding. (I) Pen and paper wireframe. (II) Figma components along with my illustrations and handwritten titles. (III & IV) Final Figma design.</ul>
+ 		</section>
+ 	</div>
+
+<script>
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="divider" id="two"></div>
+
+ <div class=projects-beige>
+ 	<div class="overview-text">
+   		<img style="width: 30%; min-width: 250px" src="./img/coding.png">
+  </div>
+  <section class="project-preview">
+    <h1>I: Closet Search Filter Web/Mobile App</h1>
+    <div class="video-text-block">
+      <div class="vid"><video playsinline autoplay muted loop src="./img/project1.mp4" width="60%"></video></div>
+
+      <div class="buttons-section">
+       <button class="button-30" role="button"><a href="https://amldej.github.io/angelicas-closet/" target=”_blank”>Launch Site</a></button>
+       <button class="button-30" role="button"><a href="https://github.com/amldej/angelicas-closet" target=”_blank”>See Github</a></button>
+      </div>
+
+      <ul style=" text-align:center; padding-bottom: 20px;"> 
+       <!-- <li><b>Problem:</b> With remote work we have been finding ourselves allowing for a bit more travel. I personally have been living as a bit of a nomad which meant I was essentially living out of my suitcase. I found myself rummaging through my clothes to decide on an outfit, reorganizing to keep neat, to then rummage again the next day. To avoid a mess I would sometimes rewear a lot of the items that were sitting on top, forgetting all about the rest of my precious wardrobe. </li>  -->
+        <li><b>Description:</b> Whether you're a travel lover like me and find yourself constantly living out of a suitcase or simply just need a better way to go through your clothes stuffed drawers - I decided to use JavaScript React to create a clothing search filter. This app allows me to be able to scroll through my items as well as filter the results depending on type or color. I included functions such as "pin" and "unpin" in order to see different clothing items next to each other. There is also a hide button to prevent the item from appearing wheather it's because it's a no or because it's in the dirty bin. <b>Skills Performed:</b> HTML/CSS, JavaScript React, filtering arrays, Class Based Components</li>
+      </ul>
+    </div>
+  </section>
+
+    <section class="project-preview">
+    <h1>II: Personal Online Blog</h1>
+    <div class="video-text-block">
+      <div class="vid"><video playsinline autoplay muted loop src="./img/project2.mp4" width="60%"></video></div>
+
+      <div class="buttons-section">
+       <button class="button-30" role="button"><a href="https://amldej.github.io/online-blog/" target=”_blank”>Launch Site</a></button>
+       <button class="button-30" role="button"><a href="https://github.com/amldej/angelicas-closet" target=”_blank”>See Github</a></button>
+      </div>
+
+      <ul style="text-align:center; padding-bottom:30px"> 
+       <!-- <li><b>Client Request:</b> For my next project, I wanted to create another website that I could use everyday. Something I make sure to do often is journal - whether it's recalling a happy event or reflecting on current emotions, I have found it to be very beneficial for my own being. I do like to journal by hand, but sometimes if I'm in a time crunch or have lots to say I turn to typing. I will usually just use my notes App however wanted to create something that had more of a journal feel, something seperate from where I keep my daily to do lists.</li>  -->
+       <li>Being passionate about the practice of journaling I decided to create a simple online blog platform using JavaScript React and Google Firebase. I designed the homepage to include a photo of a journal overlayed with some writing I did on SketchPad to evoke that handwritten journal feel. Under "thoughts" I have the entries being transferred from Firebase appearing in order from newest to oldest. Lastly, you can create a new entry under the "new" tab that will add onto the Firebase data collection at publish. I kept the design clean and simple embodying that of a blank notebook. <b>Skills Performed:</b> HTML/CSS, JavaScript React, React Hooks: useState and useEffect, Google FireBase </li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<div class="divider" id="three"></div>
+
+	<div class="projects-beige">
+			<div class="overview-text">
+   		<img style="width: 45%; min-width: 250px; margin-top:25px" src="./img/video.png">
+   	</div>
+   <div class="video-wrapper"> 
+<div class="video-project-preview">
+	 <section class="project-preview" id="two">
+	 	<h1>I: Video Content for <em>Cou Cou Intimates</em></h1>
+	  <div class="video-text-block">
+	    <div class="vid"><video preload="metadata" controls src="./img/Coucou.mp4#t=3.8" width=80%></video></div>
+	    <ul style="text-align:center; padding-top: 15px; padding-bottom: 20px">Little video I edited on Final Cut Pro wearing one of my favorite brands. Played around with shape masks, layering, and on beat transitions.</ul>
+	  </div>
+	 </section>
+
+	 <section class="project-preview">
+	 	<h1>II: Clip from Morning Routine Video</h1>
+	  <div class="video-text-block">
+	   <div class="vid">
+      <video controls preload="metadata" src="./img/MornRoutineClip.mp4" width="80%"></video>
+	   <ul style="text-align:center; padding-top: 15px; padding-bottom: 20px">Edited on Final Cut Pro. Incorporated handwritten texts and doodle graphics from Sketchpad. Simulated a typewriter effect for video texts. </ul>
+	  </div>
+	 </section>
+ </div> 
+
+     <section class="project-preview">
+    <h1>III: Vertical Content Video in Paloma Wool</h1>
+    <div class="video-text-block">
+     <div class="vid">
+      <video class="paloma" controls preload="metadata" src="./img/paloma video.mp4"></video>
+     <ul style="text-align:center; padding-top: 15px">Edited on iMovie with funky transitions to provide a more vintage feel.</ul>
+    </div>
+   </section>
+ </div>
+</div>
+</div>
+
+
+<footer>© 2023 Coded by Angelica de Jesus.</footer>
+
+</body>
+</html>
