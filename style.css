@@ -250,10 +250,11 @@ a {
 /* Slideshow container */
 .slideshow-container {
   max-width: 700px;
+  min-width: 280px;
   position: relative;
   margin-left: 40px;
   margin-right: 40px;
-  width:50%;
+  width:60%;
 }
 
 @media only screen and (max-width: 500px) {
