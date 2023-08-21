@@ -1,7 +1,7 @@
-@font-face {
+/*@font-face {
 font-family: 'Marny';
 src:  url('fonts/marnyregular-lg3gx.woff2') format('woff2');
-}
+}*/
 
 @keyframes slideLeft {
     0% {
@@ -45,7 +45,7 @@ a {
 
 .nav-list {
     margin: 0px;
-    margin-left: -10px;
+    margin-left: -20px;
     display: flex;
     list-style: none;
 }
@@ -63,7 +63,7 @@ a {
 
 .nav-right a {
     padding-right: 0px;
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 .clicked {
@@ -97,12 +97,16 @@ a {
 }
 
 .info-text p {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 @media only screen and (max-width: 700px) {
     .info-text {
         font-size: .9em;
+    }
+    .info-text p {
+        margin:20px;
+        margin-top: 0px;
     }
 }
 
