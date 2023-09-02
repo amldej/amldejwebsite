@@ -325,6 +325,7 @@ a {
 .project-preview ul {
     margin: 0;
     padding: 40px;
+    max-width: 900px;
 }
 
 @media only screen and (max-width: 500px) {
